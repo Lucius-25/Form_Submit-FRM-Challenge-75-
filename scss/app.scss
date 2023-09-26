@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+$theme-colors:(
+    primary : hsl(4, 100%, 67%),
+    darkSlateGrey : hsl(234, 29%, 20%) ,
+    lightGrey: hsl(235, 18%, 26%),
+    grey: hsl(231, 7%, 60%),
+    white: hsl(0, 0%, 100%),
+);
+
+@import '../node_modules/fontawesome-free/css/all.min.css';
+
+#row{
+    display: flex;
+    height: 500px;
+    padding: 20px;
+    width: 800px;
+}
+
+#card{
+    margin: 20px;
+    // margin-bottom: 20px;
+    // padding-bottom: 20px;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
