@@ -1,4 +1,4 @@
-﻿@import"https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap";@import'../node_modules/fontawesome-free/css/all.min.css';#row{display:flex;height:500px;padding:20px;width:800px}#card{margin:20px}/*!
+﻿@import"https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap";@import"../node_modules/fontawesome-free/css/all.min.css";#row{height:500px;padding:20px;width:800px}#card{margin:20px}#left_card{width:200px}#card-photo{height:450px;width:350px}.checked{font-size:14px;display:inline-block;padding-left:7px}.email{font-size:x-small}.text{font-size:15px}.heading{font-size:40px}#confirmBtn:hover{background-image:linear-gradient(60deg, hsl(4, 100%, 74%), hsl(4, 99%, 65%), hsl(341, 100%, 50%), hsl(4, 100%, 50%), hsl(307, 100%, 78%));box-shadow:0 0 15px gray;border:none}/*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body class="bg-darkSlateGrey vh-100 d-flex justify-content-center align-content-center">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    class="bg-darkSlateGrey vh-100 d-flex justify-content-center align-content-center"
+  >
+    <main id="app" class="m-5">
+      <div class="container" id="container">
+        <div class="row bg-white mt-5 rounded-5" id="row">
+          <div class="col-lg-6 col-12 text-darkSlateGrey" id="card">
+            <p class="fw-bold mt-4 heading">Stay updated!</p>
+            <p class="checked">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <form action="https://google.com">
+              <div class="mb-3">
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <p class="checked">
+                  Product discovery and building what matters
+                </p>
+                <br />
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <p class="checked">Measuring to ensure updates are a success</p>
+                <br />
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <p class="checked">And much more!</p>
+              </div>
+              <div>
+                <p class="email fw-bold">
+                  Email address <span class="ok"></span>
+                </p>
 
-    <main id="app" class="m-5 ">
+                <input
+                  type="email"
+                  placeholder="email@company.com"
+                  class="input-group-text w-100"
+                  id="input_31"
+                  required
+                />
 
-        <div class="container">
-            <div class="row bg-white mt-5 rounded-5 " id="row">
-                <div class="col-6 text-darkSlateGrey" id="card">
-                    <h1 class="fw-bold mt-4">Stay updated!</h1>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <form action="https://google.com">
-                        <div class="mb-5">
-                            <input type="checkbox" id="checked1" class="bi bi-check-circle" name="checked1">
-                            <label for="checked1">Product discovery and building what matters</label>
-                            <br>
-                            <input type="checkbox" id="checked2" name="checked2">
-                            <label for="checked2">Measuring to ensure updates are a success</label>
-                            <br>
-                            <input type="checkbox" id="checked3" name="checked3">
-                            <label for="checked3" >And much more!</label>
-                        </div>
-                        <div>
-                            <p>Email address</p>
-                            <input type="email" placeholder="email@company.com" class="input-group-text" id="input_31">
-                            <button class="mt-4 btn btn-darkSlateGrey " id="btn_32">Subscribe to monthly newsletter</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-6 ">
-                    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
-                </div>
-            </div>
+                <button
+                  class="mt-3 btn btn-darkSlateGrey w-100 btn-lg"
+                  id="showBtn"
+                >
+                  <span class="text">Subscribe to monthly newsletter</span>
+                </button>
+              </div>
+              <!-- <img id="card-photo" src="./assets/images/illustration-sign-up-desktop.svg" alt="" class=""> -->
+            </form>
+          </div>
+          <div class="col-lg-6 col-12" id="left_card">
+            <img
+              id="card-photo"
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt=""
+            />
+          </div>
         </div>
+      </div>
 
+      <div id="finalCard" class="d-none"> 
+        <div
+        class="min-vh-100 d-flex justify-content-center align-items-center " 
+      >
+        <div class="bg-white p-5 rounded-4">
+          <img src="./assets/images/icon-success.svg" alt="" class="" />
+          <p class="fw-bold mt-3 heading">Thanks for <br />subscribing!</p>
+          <p>
+            A confirmation email has been sent to 
+            <br>ash@loremcompany.com. Please open it and click
+            <br>the button inside to confirm your subscription.
+          </p>
+          <button
+          class="mt-3 btn btn-darkSlateGrey w-100 btn-lg"
+          id="confirmBtn">
+          <span class="text">Dismiss message</span>
+        </button>
+        </div>
+      </div>
+      </div>
     </main>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
